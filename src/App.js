@@ -9,8 +9,8 @@ function App() {
   const [result, setResult] = useState({ winner: "none", state: "none" });
 
   useEffect(() => {
-    checkWin();
     checkIfTie();
+    checkWin();    
 
     if (player == "X") {
       setPlayer("O");
