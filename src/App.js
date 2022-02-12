@@ -4,7 +4,7 @@ import Square from "./Components/Square";
 import { Patterns } from "./Patterns";
 
 function App() {
-  const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);
+  const [board, setBoard] = useState(Array(9).fill(""));
   const [player, setPlayer] = useState("O");
   const [result, setResult] = useState({ winner: "none", state: "none" });
 
